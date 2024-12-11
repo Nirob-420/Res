@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <header>
+        <input type ="checkbox" name ="" id ="chk1">
+        <div class="logo"><h1>REVENGE E-SPORTS</h1></div>
+           
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="member.html">Members</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+                   
+                 <li><a href="guilld.html">Join</a></li>
+                 
+               
+            </ul>
+            <div class="menu">
+                <label for="chk1">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </div>
+    </header>
+<style>
+    /* General Styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        max-width: 100%;
+    }
+
+    .containner {
+        max-width:90%;
+justify-items: center;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        animation: fade-in 1s ease-in-out;
+    }
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Header Styles */
+    
+
+   h1 {
+        margin: 0;
+        color: #333;
+    }
+
+    /* Content Styles */
+    .content {
+        margin-top: 20px;
+        line-height: 1.6;
+    }
+
+    .content p {
+        margin-bottom: 15px;
+    }
+
+    /* List Styles */
+    .highlights {
+        margin-top: 30px;
+    }
+
+    .highlights h2 {
+        color: #1a73e8;
+        margin-bottom: 15px;
+    }
+
+    .highlight-item {
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-left: 5px solid #1a73e8;
+        transition: transform 0.3s ease-in-out;
+    }
+header {
+  width: 94%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  box-shadow: 0 0 10px #000;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 10px;;
+  
+}
+    .highlight-item:hover {
+        transform: translateX(10px);
+    }
+
+    /* Footer Styles */
+    footer {
+        text-align: center;
+        margin-top: 50px;
+        padding: 20px 0;
+        background-color: #1a73e8;
+        color: #fff;
+    }
+
+    @media screen and (max-width: 668px) {
+        .container {
+            width: 100%;
+            margin: 10px;
+            padding: 15px;
+        }
+
+        .highlight-item {
+            padding: 8px;
+        }
+    }
+    
+#chk1{
+    display: none;
+     
+     
+}
+i{
+    color: #fff;
+    cursor: pointer;
+    animation: wiggle 2s linear infinite;
+}
+/* Keyframes */
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+header.logo{
+    flex: 1;
+    color:#fff;
+     
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 500px
+}
+header .search-box{
+    flex: 1;
+    position: relative;
+}
+.search-box input{
+    width:100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background:#f2f2f2;
+    border-radius: 30px;
+    color:gray;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 40px;
+    text-align: center;
+     
+}
+ 
+.search-box button{
+    cursor: pointer;
+    width:40px;
+    height: 40px;
+    border-radius: 30px;
+    border:none;
+    position: absolute;
+    top:0;
+    right: 0;
+    transform: scale(0.9);
+    background: green;
+    color: #fff;
+}
+header ul {
+    flex:2;
+    display: flex;
+    justify-content: space-evenly;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+header ul li a:hover{
+    border-bottom: 2px solid cadetblue;
+}
+header .menu{
+    font-size: 2.5em;
+    display: none;
+}
+@media(max-width:1000px){
+    .search-box button{
+        position: absolute;
+    }
+    header ul{
+        position: fixed;
+        top:100px;
+        right: -100%;
+        background: rgba(0,0,0,0.5);
+        height: calc(100vh - 100px);
+        width:50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+     
+    header .menu{
+        display: block;
+        width:100px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+        
+    }
+  
+}
+</style>
+</head>
+<body>
+<div class="containner">
+    
+        <h1>About Us</h1>
+        <p>Welcome to our guild!</p>
+    
+
+    <div class="content">
+        <p></p>
+
+        <div class="highlights">
+            <h2>Highlights</h2>
+          
+            <div class="highlight-item">
+                <p><strong>Skills:</strong>Minimum 200 points should be scored in war.
+                
+                If you score 160 points, you will join the tournament.</p>
+            </div>
+            <div class="highlight-item">
+                <p><strong>Activism:</strong>Day of Guild War 2:30 minutes online.
+                War should be online for three days.</p>
+            </div>
+            <div class="highlight-item">
+                <p><strong>Other:</strong>The game should not be turned off after the war point.</p>
+            </div>
+            <div class="highlight-item">
+                <p><strong><a href="member.html">Members</a></strong></p>
+                <p><strong><a href="gallary.html">Our Gallery</a></strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 REVENGE E-SPORTS.</p>
+</footer>
+
+</body>
+</html>
